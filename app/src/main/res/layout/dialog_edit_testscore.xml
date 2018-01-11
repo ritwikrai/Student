@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="13dp"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+        android:layout_marginTop="41dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="match_parent"
+                android:text="GRE"
+                android:textAppearance="?android:textAppearance"
+                android:textColor="@color/chat_sent_blue"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:id="@+id/et_greScore"
+                android:layout_marginTop="7dp"
+                android:layout_marginLeft="21dp"
+                android:layout_marginRight="21dp"
+                android:layout_width="match_parent"
+                android:paddingLeft="41dp"
+                android:layout_weight="1"
+                android:hint="GRE Score"
+                android:paddingRight="41dp"
+                android:inputType="textMultiLine"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <View
+            android:layout_width="3dp"
+            android:layout_height="match_parent"
+            android:background="#F5F5F5" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="match_parent"
+                android:text="TOEFL/IELTS"
+                android:textAppearance="?android:textAppearance"
+                android:textColor="@color/chat_sent_blue"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:id="@+id/et_toeflScore"
+                android:layout_marginTop="7dp"
+                android:layout_marginLeft="21dp"
+                android:layout_marginRight="21dp"
+                android:layout_width="match_parent"
+                android:paddingLeft="41dp"
+                android:layout_weight="1"
+                android:hint="TOEFL/IELTS Score"
+                android:paddingRight="41dp"
+                android:inputType="textMultiLine"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2">
+        <Button
+            android:id="@+id/btn_cancel"
+            android:layout_width="0dp"
+            android:text="Cancel"
+            android:layout_weight="1"
+            android:layout_marginTop="21dp"
+            android:layout_marginLeft="31dp"
+
+            android:background="@color/chat_sent_blue"
+            android:textColor="@color/white"
+            android:layout_marginRight="21dp"
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/btn_submit"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="Submit"
+            android:layout_marginTop="21dp"
+            android:layout_marginLeft="21dp"
+            android:background="@color/chat_sent_blue"
+            android:textColor="@color/white"
+            android:layout_marginRight="31dp"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+</LinearLayout>
